@@ -1,4 +1,4 @@
-.header {
+/* .header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,5 +11,56 @@
     text-align: center;
     font-weight: bold;
     font-size: 2em;
+  }
+} */
+
+/* :root {
+    --text-decoration: underline;
+} */
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 14px;
+  height: 64px;
+
+  &__link-mail {
+    margin-right: 15px;
+    cursor: pointer;
+  }
+
+  &__link-img {
+    margin-right: 25px;
+    cursor: pointer;
+  }
+
+  &__link-mail:hover {
+    text-decoration: underline;
+  }
+
+  &__link-img:hover {
+    text-decoration: underline;
+  }
+  /* a:hover {
+    color: #800000; /* Цвет ссылки при наведении на нее курсора мыши */
+    /* text-decoration: underline; /* Добавляем подчеркивание */
+   /* } */
+
+  &__avatar {
+    cursor: pointer;
+    height: auto;
+    border-radius: 50%;
+    height: 32px;
+    margin-right: 12px;
+  }
+
+  &__hamburger {
+    width: 24px;
+    margin-right: 25px;
+    height: 24px;
+    background-color: grey;
+    /* background-image: url("images/hamburger.svg"); */
+    cursor: pointer;
   }
 }
