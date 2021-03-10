@@ -1,51 +1,42 @@
-/* .header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 16px 8px 12px;
-  height: 40px;
-  background-color: #2c2c2c;
-  color: #e0e0e0;
-
-  &__title {
-    text-align: center;
-    font-weight: bold;
-    font-size: 2em;
-  }
-} */
-
 /* :root {
     --text-decoration: underline;
 } */
+
+@mixin link ($margin-right: 15px) {
+    margin-right: $margin-right;
+    cursor: pointer;
+}
+
+/* @mixin link-hover {
+    text-decoration: underline;
+  } */
 
 .header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   font-size: 14px;
-  height: 64px;
+  height: 65px;
 
   &__link-mail {
     margin-right: 15px;
     cursor: pointer;
+    /* @include link; */
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   &__link-img {
     margin-right: 25px;
     cursor: pointer;
-  }
+    /* @include link(25px); */
 
-  &__link-mail:hover {
-    text-decoration: underline;
+    &:hover {
+      text-decoration: underline;
+    }
   }
-
-  &__link-img:hover {
-    text-decoration: underline;
-  }
-  /* a:hover {
-    color: #800000; /* Цвет ссылки при наведении на нее курсора мыши */
-    /* text-decoration: underline; /* Добавляем подчеркивание */
-   /* } */
 
   &__avatar {
     cursor: pointer;
@@ -59,8 +50,7 @@
     width: 24px;
     margin-right: 25px;
     height: 24px;
-    background-color: grey;
-    /* background-image: url("images/hamburger.svg"); */
+    background-image: url('../../images/hamburger.svg');
     cursor: pointer;
   }
 }

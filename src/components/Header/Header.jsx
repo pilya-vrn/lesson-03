@@ -1,7 +1,7 @@
 import block from 'bem-cn'
 import React from 'react'
-// import backgroundImg from "images/hamburger.jpg";
 import './Header.css'
+import avatar from "../../images/photo.jpg";
 
 const b = block('header')
 
@@ -11,7 +11,7 @@ export const Header = () => (
     <span className={b('link-img')}>Картинки</span>
     <div className={b('hamburger')} >
     </div>
-    <img className={b('avatar')} src="images/photo.jpg" alt="Ваш аватар" />
+    <img className={b('avatar')} src={avatar} alt="Ваш аватар" />
 
     {/* <span className={b('title')}>
       Application title

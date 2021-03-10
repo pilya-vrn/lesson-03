@@ -1,0 +1,44 @@
+.content {
+  height: calc(100% - 145px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__logo {
+    padding-top: 100px;
+  }
+
+  &__content-buttons {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    justify-content: center;
+
+    button {
+      font-size: 14px;
+      background-color: #f5f5f5;
+      transition: all 0.4s ease-in-out;
+      border: 1px solid transparent;
+      display: block;
+      max-width: 134px;
+      padding: 10px 14px;
+      cursor: pointer;
+      border-radius: 3px;
+      color: #5f6368;
+
+      &:hover {
+        color: #333;
+        border-color: #999;
+      }
+
+      &:first-child {
+        margin-right: 15px;
+      }
+    }
+  }
+}
+
+
+
