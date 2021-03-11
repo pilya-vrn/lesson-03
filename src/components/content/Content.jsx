@@ -1,6 +1,6 @@
 import block from 'bem-cn'
 import React from 'react'
-import './Content.css'
+import './Content.scss'
 import { SearchBox } from "../searchBox/SearchBox";
 import logoGoogle from "../../images/logo.gif";
 

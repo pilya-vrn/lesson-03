@@ -1,6 +1,6 @@
 import block from 'bem-cn'
 import React from 'react'
-import './Footer.css'
+import './Footer.scss'
 
 const b = block('footer')
 

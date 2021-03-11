@@ -1,15 +1,11 @@
-/* :root {
-    --text-decoration: underline;
-} */
-
 @mixin link ($margin-right: 15px) {
     margin-right: $margin-right;
     cursor: pointer;
 }
 
-/* @mixin link-hover {
+@mixin link-hover {
     text-decoration: underline;
-  } */
+  }
 
 .header {
   display: flex;
@@ -19,22 +15,18 @@
   height: 65px;
 
   &__link-mail {
-    margin-right: 15px;
-    cursor: pointer;
-    /* @include link; */
+    @include link;
 
     &:hover {
-      text-decoration: underline;
+      @include link-hover;
     }
   }
 
   &__link-img {
-    margin-right: 25px;
-    cursor: pointer;
-    /* @include link(25px); */
+    @include link(25px);
 
     &:hover {
-      text-decoration: underline;
+      @include link-hover;
     }
   }
 

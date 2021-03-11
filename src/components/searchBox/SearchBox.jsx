@@ -1,6 +1,6 @@
 import block from 'bem-cn'
 import React from 'react'
-import './SearchBox.css'
+import './SearchBox.scss'
 
 const b = block('searchBox')
 

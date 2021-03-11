@@ -1,6 +1,6 @@
 import block from 'bem-cn'
 import React from 'react'
-import './Header.css'
+import './Header.scss'
 import avatar from "../../images/photo.jpg";
 
 const b = block('header')
